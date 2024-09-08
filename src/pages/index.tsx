@@ -8,7 +8,7 @@ export default function IndexPage() {
   const [ecKey, setEcKey] = useState<Number>();
   const [ecIv, setEcIv] = useState<Number>();
 
-  const toogleCbc = (): undefined => {
+  const toogleCbc = () => {
     setIsCbc(!isCbc);
   }
 
