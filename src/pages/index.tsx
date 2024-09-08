@@ -89,7 +89,7 @@ export default function IndexPage() {
                     <Input label='0 - 255' className='px-2' value={ecIv as number} onChange={(e) => inputIV(e.target.value)}></Input>
                   </>
                 }
-                <a className='flex' href='http://localhost:3000/api/hello' target='_blank'>
+                <a className='flex' href={`${process.env.NEXT_PUBLIC_BASE_URL}/api/hello`} target='_blank'>
                   <Button className='mt-6' fullWidth>
                     Get Encrypted Message!!
                   </Button>
